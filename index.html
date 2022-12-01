@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>25 Days of Christmas</title>
+</head>
+<body>
+   <header>
+        <nav>
+            <div class="symbol">
+            <a href="#"><img src="images/icons.png" alt="Santa Claus"></a>
+            </div>
+            <h1>25 Days of Christmas</h1>
+            <div class="search">
+                <a href="#"><img src="images/glass.png" alt="search icon"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#"><b>Home</b></a></li>
+                    <li><a href="#"><b>About</b></a></li>
+                    <li><a href="#"><b>Movies</b></a></li>
+                    <li><a href="#"><b>Activities</b></a></li>
+                </ul>
+            </div>
+        </nav>
+   </header>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <!-- Slider main container -->
+   <div class="swiper">
+       <!-- Additional required wrapper -->
+       <div class="swiper-wrapper">
+       <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="images/the_grinch.jpeg" alt="The Grinch sitting with his dog">
+            <div class="movies">
+                <h2>The Grinch</h2>
+                <a href="#"><b>Stream Now</b></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/The_Polar_Express.jpeg" alt="The trains arrives">
+            <div class="movies">
+                <h2>The Polar Express</h2>
+                <a href="#"><b>Stream Now</b></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/the_santa_clause.jpg" alt="Santa and his son">
+            <div class="movies">
+                <h2>The Santa Clause</h2>
+                <a href="#"><b>Stream Now</b></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/elf.jpeg" alt="Buddy in classroom">
+            <div class="movies">
+                <h2>Elf</h2>
+                <a href="#"><b>Stream Now</b></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/It's_A_Wonderful_Life.jpeg" alt="Family Hugging">
+            <div class="movies">
+                <h2>It's A Wonderful Life</h2>
+                <a href="#"><b>Stream Now</b></a>
+            </div>
+        </div>
+       
+       </div>
+       <!-- If we need pagination -->
+       <div class="swiper-pagination"></div>
+   
+       <!-- If we need navigation buttons -->
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
+   
+   </div>
+
+
+
+   <script>
+       const swiper = new Swiper('.swiper', {
+ // Optional parameters
+ direction: 'horizontal',
+ loop: true,
+
+ // If we need pagination
+ pagination: {
+   el: '.swiper-pagination',
+ },
+
+ // Navigation arrows
+ navigation: {
+   nextEl: '.swiper-button-next',
+   prevEl: '.swiper-button-prev',
+ },
+
+});
+   </script>
+   <main>
+        <h1>Christmas Activities</h1>
+        <aside>
+                <article>
+                    <img src="images/ice_skating.jpg" alt="ice skating rank">
+                    <div class="text">
+                        <h2>Ice Skating</h2>
+                        <p>Come learn more about ice skating activites around you for the Christmas holiday!</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/christmas_treats2.jpg" alt="Christmas Cookies">
+                    <div class="text">
+                        <h2>Christmas Treats</h2>
+                        <p>Find your favorite recipe by looking under our Christmas Treats and make sure to tag us for us to see your treats.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/christmas_crafts.jpg" alt="Christmas Crafts">
+                    <div class="text">
+                        <h2>Christmas Crafts</h2>
+                        <p>Find your favorite Christmas crafts by looking under our Christmas Crafts and make sure to tag us for us to see your creations.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/sledding.jpg" alt="A kid going sledding">
+                    <div class="text">
+                        <h2>Sledding</h2>
+                        <p>Find some amazing sled riding activites near your area for the Christmas holiday!</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/buliding_a_snowman.jpeg" alt="A kid building a snowman">
+                    <div class="text">
+                        <h2>Building A Snowman</h2>
+                        <p>Join our community by posting your snowman creation and enjoying the snowman in the community.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/ugly_sweaters.jpeg" alt="A couple wearing ugle sweaters">
+                    <div class="text">
+                        <h2>Ugly Sweaters</h2>
+                        <p>We want to see your ugly sweaters that you wear during the holiday! Look out our recommandations as well!</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </article>
+        </aside>
+   </main>
+<footer>
+    <a href="#"><img src="images/icons.png" alt="Santa Claus"></a>
+    <h3>25 Days of Christmas</h3>
+</footer>
+</body>
+</html>

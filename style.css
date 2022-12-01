@@ -1,0 +1,167 @@
+*, *:before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 96px;
+    font-family: 'Gochi Hand', cursive;
+}
+header{
+    background-color: #52A67F;
+    color: white
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header nav ul{
+    padding: 0%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header nav ul a{
+    text-decoration: none;
+    color: white;
+}
+.symbol{
+    padding: 1rem;
+}
+.search{
+    padding-right: 35px;
+}
+.menu{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    font-size: 36px;
+}
+.menu ul{
+    gap: 100px;
+    list-style: none;
+    padding: 0 0 50px 0;
+    display: flex;
+}
+.movies{
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.movies a{
+    color: white;
+    padding: 1rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+.movies h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}
+/* come back to carosuel */
+.swiper {
+    width: 1440px;
+    height: auto;
+}
+.swiper-button-next{
+    color: white;
+}
+.swiper-button-prev{
+    color: white;
+}
+:root{
+    --swiper-theme-color: #1D593D;
+}
+main{
+    color: white;
+    text-align: center;
+}
+main h1{
+    color: #981C21;
+    font-size: 80px;
+    padding-top: 75px;
+}
+main h2{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2.5rem;
+}
+main p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+article{
+    max-width: 33.333%;
+    position: relative;
+}
+.text p{
+    line-height: 1.4;
+}
+.text a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+article .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
+    visibility: hidden;
+    transition: all 250ms ease-in-out;
+}
+article .text h2{
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+article img {
+    max-width: 100%;
+    height: auto;
+}
+article:hover .text{
+    visibility: visible;
+    background-color: rgba(217, 36, 52, 0.5);
+    transition: background-color 250ms ease-in-out;
+}
+article:hover .text h2{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 250ms ease-in-out;
+}
+footer{
+    background-color: #1D593D;
+    font-family: 'Gochi Hand', cursive;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 25px;
+    font-size: 2rem;
+}
+footer img{
+    width: 75px;
+}
